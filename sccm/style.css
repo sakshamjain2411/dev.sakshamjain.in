@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.main a {
+  text-decoration: none;
+}
+.main a:hover {
+  color: #e6922e;
+}
+.main h2 {
+  font-size: 42px;
+  font-weight: 700;
+}
+.main h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.main h4 {
+  font-size: 18px;
+  font-weight: 800;
+}
+.main h5 {
+  color: #e6922e;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.main p, .main li {
+  color: #5d6471;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 0px;
+}
+.main section {
+  position: relative;
+  padding: 100px 40px;
+}
+.main .blob {
+  position: absolute;
+}
+.main .c-white {
+  color: #fff;
+  opacity: 1;
+}
+.main .btn-primary {
+  border: 1px solid #e6922e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 12px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  z-index: 2;
+  background: #e6922e;
+  width: 160px;
+  border-radius: 2px;
+}
+.main .btn-primary:hover {
+  background: #e2a254;
+  border: 1px solid #e2a254;
+}
+.main .navbar {
+  padding: 0px 40px;
+}
+.main .navbar .navbar-brand {
+  color: #e2a254;
+  font-size: 36px;
+  font-weight: 700;
+}
+.main .navbar .navbar-nav .nav-item .nav-link {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.main .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #e2a254;
+}
+.main .navbar.bg-colored {
+  background: #fff;
+}
+.main .hero {
+  position: relative;
+  background: url(./assets/banner03.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.main .hero h2 {
+  color: #fff;
+  font-size: 58px;
+  font-weight: 700;
+}
+.main .hero h3 {
+  color: #fff;
+}
+.main .hero p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+.main .hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 24, 40, 0.8);
+  z-index: -1;
+}
+.main .hero form {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.1490196078);
+  padding: 20px;
+  border-radius: 10px;
+}
+.main .hero form h3 {
+  font-weight: 600;
+}
+.main .hero form .form-group {
+  padding: 10px;
+  width: 50%;
+  float: left;
+}
+.main .hero form .form-group-full {
+  width: 100%;
+}
+.main .hero form .form-contorl {
+  color: #5d6471;
+}
+.main .page-title {
+  min-height: 300px;
+  position: relative;
+  background: url(./assets/banner03.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.main .page-title ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 24, 40, 0.5);
+  z-index: -1;
+}
+.main .page-title hr {
+  width: 50px;
+  border-top: 4px solid;
+}
+.main .about .about-content {
+  vertical-align: middle;
+}
+.main .about .about-image {
+  text-align: center;
+  position: relative;
+}
+.main .about .about-image .main-image {
+  border-radius: 100%;
+  border: 10px solid #fff;
+  width: 400px;
+  height: 400px;
+}
+.main .about .blob-one {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+}
+.main .counter {
+  position: relative;
+  background: url(./assets/banner02.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.main .counter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 24, 40, 0.8);
+  z-index: -1;
+}
+.main .counter .item {
+  padding: 30px;
+  height: 200px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6901960784);
+  border-radius: 10px;
+  vertical-align: middle;
+  text-align: center;
+}
+.main .counter .item .icon {
+  padding: 20px;
+  font-size: 70px;
+}
+.main .information .information-content {
+  padding: 50px 30px;
+  background: #e6922e;
+  border-radius: 10px;
+}
+.main .information .information-content p {
+  color: #fff;
+  font-weight: 600;
+}
+.main .information .information-content .icon {
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.main .form {
+  text-align: center;
+  background: #fbfbfb;
+}
+.main .form h2 {
+  font-size: 30px;
+}
+.main .form form {
+  width: 600px;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+.main .form .form-group {
+  padding: 10px;
+}
+.main footer {
+  padding: 40px;
+  background: #04172e;
+}
+.main footer .footer-block {
+  text-align: right;
+}
+.main footer .footer-block .socials {
+  display: flex;
+  justify-content: flex-end;
+}
+.main footer .footer-block .socials .item {
+  background: #fff;
+  margin: 20px 0px 10px 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.main footer .footer-block .socials .item i {
+  font-size: 18px;
+}
+.main footer .footer-block ul {
+  list-style: none;
+}
+.main footer .footer-block ul li {
+  margin: 20px 0px;
+  border-right: 3px solid #fff;
+  padding-right: 10px;
+}
+.main footer .footer-block ul a {
+  color: white;
+}
+.main footer hr {
+  width: 50px;
+  border-top: 2.5px solid;
+  margin: 0px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 450px) {
+  .main .hero h2 {
+    font-size: 42px;
+  }
+  .main .hero .button-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main .hero .button-box .btn-primary {
+    font-size: 14px;
+    margin: 20px 5px;
+  }
+  .main .hero form {
+    display: none;
+  }
+  .main .about .about-image .main-image {
+    width: 300px;
+    height: 300px;
+  }
+  .main .counter .item {
+    margin-bottom: 20px;
+  }
+  .main footer .footer-block {
+    text-align: center;
+    margin: 20px 0px;
+  }
+  .main footer .footer-block ul {
+    padding-left: 0px;
+  }
+  .main footer .footer-block ul li {
+    border: none;
+  }
+  .main footer .footer-block .socials {
+    justify-content: center;
+  }
+  .main footer hr {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
