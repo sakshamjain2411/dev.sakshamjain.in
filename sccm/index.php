@@ -1,4 +1,16 @@
-<?php $page_title='home'; include_once "header.php";?> 
+<?php $page_title='home'; include_once "header.php"; include_once "send_mail.php";?> 
+<?php
+    if($_SERVER["REQUEST_METHOD"] == "POST") {
+        $data['name'] = $_POST['name'];
+        $data['email'] = $_POST['email'];
+        $data['phone'] = $_POST['phone'];
+        $data['delegates'] = $_POST['delegates'];
+        $data['occupation'] = $_POST['occupation'];
+        $data['country'] = $_POST['country'];
+        $data['addres'] = $_POST['addres'];
+        SendMail($data, "New Registration Form");
+    }
+?>
 <section class="hero">
     <div class="container-fluid">
         <div class="row">
@@ -16,19 +28,19 @@
                         <h3>Registration Form</h3>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="txtName" id="txtName" class="form-control" placeholder="Full Name"
+                        <input type="text" name="name" id="txtName" class="form-control" placeholder="Full Name"
                             required="">
                     </div>
                     <div class="form-group">
-                        <input type="email" name="txtEmail" id="txtEmail" class="form-control"
+                        <input type="email" name="email" id="txtEmail" class="form-control"
                             placeholder="Enter Email" required="">
                     </div>
                     <div class="form-group">
-                        <input type="number" name="txtMobile" id="txtMobile" class="form-control"
+                        <input type="number" name="phone" id="txtMobile" class="form-control"
                             placeholder="Contact Number" required="">
                     </div>
                     <div class="form-group">
-                        <select class="form-control" name="txtdelegates" id="txtdelegates" required="">
+                        <select class="form-control" name="delegates" id="txtdelegates" required="">
                             <option value="" selected="selected" disabled="">No.of Delegates</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -59,11 +71,11 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="txtoccupation" id="txtoccupation" class="form-control"
+                        <input type="text" name="occupation" id="txtoccupation" class="form-control"
                             placeholder="Occupation" required="">
                     </div>
                     <div class="form-group">
-                        <select class="form-control" name="txtcountry" id="txtcountry" required="">
+                        <select class="form-control" name="country" id="txtcountry" required="">
                             <option value="" selected="selected" disabled="">Select Country</option>
                             <optgroup label="North America">
                                 <option value="US">United States</option>
@@ -313,7 +325,7 @@
                         </select>
                     </div>
                     <div class="form-group form-group-full">
-                        <textarea class="form-control" name="txtaddres" rows="4" id="txtaddres"
+                        <textarea class="form-control" name="addres" rows="4" id="txtaddres"
                             placeholder="Address" required=""></textarea>
                     </div>
                     <div class="form-group">
