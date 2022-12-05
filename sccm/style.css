@@ -243,6 +243,21 @@
 .main .alert-danger {
   margin-bottom: 0px;
 }
+.main .thanks .icon {
+  font-size: 80px;
+  margin-bottom: 20px;
+  color: #e6922e;
+}
+.main .thanks .btn-primary {
+  color: #e6922e;
+  background-color: #fff;
+  border: 2px solid #e6922e;
+  border-radius: 2px;
+}
+.main .thanks .btn-primary:hover {
+  color: #fff;
+  background-color: #e6922e;
+}
 .main footer {
   padding: 40px;
   background: #04172e;
@@ -263,6 +278,12 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
+}
+.main footer .footer-block .socials .item a {
+  color: black;
+}
+.main footer .footer-block .socials .item a:hover {
+  color: #e6922e;
 }
 .main footer .footer-block .socials .item i {
   font-size: 18px;

@@ -16,13 +16,13 @@
                         <hr class="c-white">
                         <div class="socials">
                             <div class="item">
-                                <i class="fa-brands fa-facebook"></i>
+                                <a href="https://www.facebook.com/SCCM1"><i class="fa-brands fa-facebook"></i></a>
                             </div>
                             <div class="item">
-                                <i class="fa-brands fa-twitter"></i>
+                                <a href="https://twitter.com/SCCM"><i class="fa-brands fa-twitter"></i></a>
                             </div>
                             <div class="item">
-                                <i class="fa-brands fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/company/society-of-critical-care-medicine/"><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
@@ -32,11 +32,11 @@
                         <h4 class="c-white">Useful Links</h4>
                         <hr class="c-white">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Registration</a></li>
-                            <li><a href="#">Housing</a></li>
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="about.php">About</a></li>
+                            <li><a href="registration.php">Registration</a></li>
+                            <li><a href="housing.php">Housing</a></li>
+                            <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -45,10 +45,10 @@
                         <h4 class="c-white">Contact Us</h4>
                         <hr class="c-white">
                         <ul>
-                            <li>
+                            <!-- <li>
                                 <i class="fa-solid fa-phone c-white"></i>
                                 <a href="">+1 847 827-6888</a>
-                            </li>
+                            </li> -->
                             <li>
                                 <i class="fa-solid fa-house-user c-white"></i>
                                 <a href="">500 Midway Drive, Mount Prospect, IL 60056 USA</a>

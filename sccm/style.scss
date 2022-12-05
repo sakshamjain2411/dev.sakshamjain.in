@@ -263,9 +263,27 @@ $base-color : #e6922e;
             padding: 10px;
         }
     }
-    
+
     .alert-danger {
         margin-bottom: 0px;
+    }
+
+    .thanks {
+        .icon {
+            font-size:80px; 
+            margin-bottom:20px; 
+            color:$base-color;
+        }
+        .btn-primary {
+            color: $base-color;
+            background-color: #fff;
+            border: 2px solid $base-color;
+            border-radius: 2px;
+        }
+        .btn-primary:hover {
+            color: #fff;
+            background-color: $base-color;
+        }
     }
 
     footer {
@@ -285,6 +303,12 @@ $base-color : #e6922e;
                     align-items: center;
                     justify-content: center;
                     border-radius: 10px;
+                    a {
+                        color: black;
+                        &:hover {
+                            color: $base-color;
+                        }
+                    }
                     i {
                         font-size: 18px;
                     }

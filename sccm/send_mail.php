@@ -7,6 +7,7 @@
         foreach ($data as $key => $value) { 
             $message = $message . ucwords($key)." : ".$value."<br>";
         }
+        $message = $message . "IP : " . $_SERVER['REMOTE_ADDR'];
         $status = mail("saksham.jain1998@gmail.com",$subject,$message,$headers);
          
         if( $status == true ) {

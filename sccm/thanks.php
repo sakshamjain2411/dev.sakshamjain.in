@@ -9,8 +9,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <i class="fa-solid fa-square-check icon" style="font-size:80px; margin-bottom:20px; color:green;"></i>
+                <i class="fa-solid fa-square-check icon"></i>
                 <p>Thank you very much for filling this form very much. We will contact you shortly.</p>
+                <a class="btn btn-primary" href="index.php">Back Home</a>
             </div>
         </div>
     </div>
