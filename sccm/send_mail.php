@@ -1,6 +1,7 @@
 <?php
     function SendMail($data, $subject) {
         $message = "";
+        $subjetc = $subject . " SCCM 2023";
         $headers  = "From: " . "info@sakshamjain.in" . "\r\n";
         $headers .= "MIME-Version: 1.0\r\n";
         $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
