@@ -240,6 +240,9 @@
 .main .form .form-group {
   padding: 10px;
 }
+.main .alert-danger {
+  margin-bottom: 0px;
+}
 .main footer {
   padding: 40px;
   background: #04172e;

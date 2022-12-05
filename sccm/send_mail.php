@@ -7,6 +7,14 @@
         foreach ($data as $key => $value) { 
             $message = $message . ucwords($key)." : ".$value."<br>";
         }
-        mail("saksham.jain1998@gmail.com",$subject,$message,$headers);
+        $status = mail("saksham.jain1998@gmail.com",$subject,$message,$headers);
+         
+        if( $status == true ) {
+            header('Location: thanks.php');
+        } else {
+            echo '<div class="alert alert-danger" role="alert">
+                Some unexpected error occured, please try again.
+            </div>';
+        }
     }
 ?>
